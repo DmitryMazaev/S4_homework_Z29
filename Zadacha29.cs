@@ -5,14 +5,14 @@
 
 6, 1, 33 -> [6, 1, 33] */
 
-void arrayOne(int [] a)
+void ArrayOne(int [] a)
 {
     for (int i = 0; i < a.Length; i++)
     {
         a[i] = new Random().Next(1,10);
     }
 }
-void printArray (int [] a)
+void PrintArray (int [] a)
 {
     Console.Write("[");
     for (int i = 0; i < a.Length; i++)
@@ -22,5 +22,5 @@ void printArray (int [] a)
     Console.Write("]");
 }
 int[] array = new int[8];
-arrayOne(array);
-printArray(array);
+ArrayOne(array);
+PrintArray(array);
