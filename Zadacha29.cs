@@ -5,13 +5,22 @@
 
 6, 1, 33 -> [6, 1, 33] */
 
-int n = 8;
-int[] arr = new int[n];
-Random rand = new Random();
-for (int i = 0; i < arr.Length; i++)
+void arrayOne(int [] a)
 {
-    arr[i] = rand.Next(0,10);
+    for (int i = 0; i < a.Length; i++)
+    {
+        a[i] = new Random().Next(1,10);
+    }
 }
-Console.Write("[");
-Console.Write(string.Join(", ", arr));
-Console.Write("]");
+void printArray (int [] a)
+{
+    Console.Write("[");
+    for (int i = 0; i < a.Length; i++)
+    {
+        Console.Write($" {a[i]} ");
+    }
+    Console.Write("]");
+}
+int[] array = new int[8];
+arrayOne(array);
+printArray(array);
